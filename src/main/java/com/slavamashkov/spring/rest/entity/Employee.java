@@ -4,18 +4,18 @@ import lombok.*;
 
 @Getter
 @Setter
-@NoArgsConstructor
+@RequiredArgsConstructor
 @AllArgsConstructor
 public class Employee {
     private int id;
 
-    private String name;
+    private final String name;
 
-    private String surname;
+    private final String surname;
 
-    private String department;
+    private final String department;
 
-    private int salary;
+    private final int salary;
 
     @Override
     public String toString() {
